@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Scala.js application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+<h1>I am a perfect TicTacToe's player</h1>
+
+<div class="tic-tac-toe">
+    <input id="block0-0" type="radio" value="0-0" class="left first-column top first-row first-diagonal turn-1"/>
+    <label for="block0-0"></label>
+
+    <input id="block0-1" type="radio" value="0-1" class="middle second-column top first-row turn-1"/>
+    <label for="block0-1"></label>
+
+    <input id="block0-2" type="radio" value="0-2" class="right third-column top first-row second-diagonal turn-1"/>
+    <label for="block0-2"></label>
+
+    <input id="block1-0" type="radio" value="1-0" class="left first-column center second-row turn-1"/>
+    <label for="block1-0"></label>
+
+    <input id="block1-1" type="radio" value="1-1" class="middle second-column center second-row first-diagonal second-diagonal turn-1"/>
+    <label for="block1-1"></label>
+
+    <input id="block1-2" type="radio" value="1-2" class="right third-column center second-row turn-1"/>
+    <label for="block1-2"></label>
+
+    <input id="block2-0" type="radio" value="2-0" class="left first-column bottom third-row second-diagonal turn-1"/>
+    <label for="block2-0"></label>
+
+    <input id="block2-1" type="radio" value="2-1" class="middle second-column bottom third-row turn-1"/>
+    <label for="block2-1"></label>
+
+    <input id="block2-2" type="radio" value="2-2" class="right third-column bottom third-row first-diagonal turn-1"/>
+    <label for="block2-2"></label>
+
+    <div class="end">
+        <h3></h3><a href="">Restart</a>
+    </div>
+    <div class="disable">
+        <h3>Please choose your first play or second play</h3>
+        <button class="first-player">Your first</button>
+        <button class="second-player">PC first</button>
+    </div>
+</div>
+<div class="loading">
+    <img src="img/loading.gif" />
+</div>
+
+<script type="text/javascript" src="../minmaxtictactoe-fastopt.js"></script>
+<script type="text/javascript" src="../minmaxtictactoe-launcher.js"></script>
+<script type="text/javascript" src="/workbench.js"></script>
+
+</body>
+</html>

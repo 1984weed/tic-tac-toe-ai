@@ -1,1 +1,11 @@
 .idea
+minMaxSanmokuNarabe.iml
+
+target
+out
+
+target/
+.cache
+.classpath
+.project
+.settings/

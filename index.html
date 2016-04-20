@@ -53,9 +53,11 @@
     <img src="img/loading.gif" />
 </div>
 
-<script type="text/javascript" src="../minmaxtictactoe-fastopt.js"></script>
-<script type="text/javascript" src="../minmaxtictactoe-launcher.js"></script>
-<script type="text/javascript" src="/workbench.js"></script>
+<script type="text/javascript" src="./bin/app.js"></script>
 
 </body>
+<script>
+    ((typeof global === "object" && global &&
+         global["Object"] === Object) ? global : this)["client"]["TicTacToe"]().main();
+</script>
 </html>

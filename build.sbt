@@ -32,3 +32,5 @@ bootSnippet := "client.Board().main();"
 refreshBrowsers <<= refreshBrowsers.triggeredBy(fastOptJS in Compile)
 
 testFrameworks += new TestFramework("utest.runner.Framework")
+
+artifactPath in (Compile, fullOptJS) := file("bin/app.js")

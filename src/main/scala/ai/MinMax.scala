@@ -11,7 +11,6 @@ class MinMax(player: Player, board: Board){
   private var choice: Position  = null
   val baseScore = board.playersMemo.length + 1
   val border = baseScore + 1
-  var count = 0
 
   /**
     * Caclulate Next choice position Minmax algorithm
@@ -22,7 +21,6 @@ class MinMax(player: Player, board: Board){
     alphabeta(game, -border, border, 0).move
   }
   private def alphabeta(game: GameState, floor: Int, upper: Int, depth: Int): ScoreMove = {
-    count += 1
     if (game.isOver) return ScoreMove(score(game, depth), game.board.getLastMove)
 
     var alpha = floor

@@ -1,6 +1,6 @@
 package ai
 
-class Board(height: Int, width: Int){
+class Board(val height: Int, val width: Int){
   var playersMemo: List[Position] = (for(i <- 0 to height - 1; j <- 0 to width - 1) yield Position(i, j)).toList
   private var lastMove:  Option[Position] = None;
 

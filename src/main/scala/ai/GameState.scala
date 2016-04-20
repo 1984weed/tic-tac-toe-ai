@@ -30,8 +30,7 @@ class GameState(val activePlayer: Player,
     isLineMoves(board.getPlayerPositions(activePlayer)) || isLineMoves(board.getPlayerPositions(opponent))
   }
   def isLineMoves(moves: List[Position]): Boolean = {
-    // 判定方法は議論の余地があるにせよとりまOK
-    return moves.filter(a => {
+    moves.filter(a => {
       a.x == a.y
     }).length == WIN_NUMBER ||
       moves.filter(a => {

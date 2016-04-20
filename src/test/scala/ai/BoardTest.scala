@@ -3,7 +3,7 @@ package ai
 import utest._
 
 /**
-  * Created by admin on 2016/04/13.
+  * Created by kunihiro on 2016/04/13.
   */
 object BoardTest extends TestSuite {
   val tests = this {
@@ -16,10 +16,6 @@ object BoardTest extends TestSuite {
       assertMatch(board.getPlayerPositions(player1)) {
         case List(Position(0, 0)) =>
       }
-    }
-    //todo setの範囲外の場合どうするか・・・
-    'ijoutidousuru{
-
     }
     'getPositionInstance_test{
       val player1 = new Player(0)
